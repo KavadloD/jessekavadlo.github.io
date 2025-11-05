@@ -2,46 +2,353 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Jesse Kavadlo</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Official website of Jesse Kavadlo">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jesse Kavadlo, Ph.D.</title>
+    <meta name="description" content="Professor, writer, and performer. Official site of Jesse Kavadlo, Ph.D." />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <h1>Jesse Kavadlo</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#writing">Writing</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <!-- SVG icon sprites -->
+    <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+        <symbol id="icon-mail" viewBox="0 0 24 24">
+            <path
+                d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2.3-.1 7.2 5.2a1 1 0 0 0 1.2 0l7.2-5.2"
+                fill="currentColor" stroke="currentColor" stroke-width="0.5" />
+        </symbol>
+        <symbol id="icon-x" viewBox="0 0 24 24">
+            <path d="M3 3l7.7 9.3L3.6 21h3.1l5.3-6.6 4.7 6.6H21l-8-10.9L20.1 3h-3.1l-4.8 6-4.3-6H3z"
+                fill="currentColor" />
+        </symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24">
+            <path
+                d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM10 9h3.8v1.9h.1c.5-.9 1.7-2 3.6-2 3.8 0 4.5 2.5 4.5 5.7V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H10z"
+                fill="currentColor" />
+        </symbol>
+        <symbol id="icon-facebook" viewBox="0 0 24 24">
+            <path d="M13 10h3V7h-3c-1.7 0-3 1.3-3 3v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1z" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-link" viewBox="0 0 24 24">
+            <path d="M10 14a5 5 0 0 1 0-7l2.1-2.1a5 5 0 0 1 7 7l-1.3 1.3" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" />
+            <path d="M14 10a5 5 0 0 1 0 7L11.9 19a5 5 0 1 1-7-7l1.3-1.3" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" />
+        </symbol>
+    </svg>
+
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="#top" aria-label="Jesse Kavadlo home">
+                <div class="avatar"></div>
+                <div class="brand-text">
+                    <h1>Jesse Kavadlo, Ph.D.</h1>
+                    <p class="tagline">Professor • Writer • Performer</p>
+                </div>
+            </a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#bio">Bio</a>
+                <a href="#band">Band</a>
+                <a href="#popmatters">PopMatters</a>
+                <a href="#podcasts">Podcasts</a>
+                <a href="#books">Books</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>Placeholder text for the About section.</p>
+    <main id="top" class="wrap">
+        <!-- Hero with contact icons -->
+        <section class="hero">
+            <div class="hero-grid">
+                <figure class="hero-pic">
+                    <img src="assets/Placeholder image.png" alt="Portrait placeholder for Jesse Kavadlo" />
+                    <figcaption>PIC</figcaption>
+                </figure>
+
+                <div class="hero-text">
+                    <p>
+                        Professor, writer, and performer Jesse Kavadlo received his Ph.D. from Fordham University. He is
+                        a Professor of English and Humanities at Maryville University of St. Louis, where he is also the
+                        Director of the Center for Teaching and Learning and Coordinator of CORE 101: Discovering
+                        Community. He teaches classes in American literature as well as courses like Aliens to Zombies:
+                        Monsters in Literature and Film, Reading Rock & Roll, and Superheroes in American Culture.
+                    </p>
+                    <p>Jesse’s articles and chapters have appeard in the journals LIST and the books LIST</p>
+                    <p>He has presented at many national conferences, including LIST</p>
+
+                    <div class="contact-icons" aria-label="Contact links">
+                        <a class="icon" href="mailto:jkavadlo@maryville.edu" title="Email: jkavadlo@maryville.edu"
+                            aria-label="Email jkavadlo@maryville.edu">
+                            <svg>
+                                <use href="#icon-mail" />
+                            </svg>
+                        </a>
+                        <a class="icon" href="mailto:hourmanjk@gmail.com" title="Email: hourmanjk@gmail.com"
+                            aria-label="Email hourmanjk@gmail.com">
+                            <svg>
+                                <use href="#icon-mail" />
+                            </svg>
+                        </a>
+                        <a class="icon" href="#" title="X profile" aria-label="X profile">
+                            <svg>
+                                <use href="#icon-x" />
+                            </svg>
+                        </a>
+                        <a class="icon" href="#" title="LinkedIn profile" aria-label="LinkedIn profile">
+                            <svg>
+                                <use href="#icon-linkedin" />
+                            </svg>
+                        </a>
+                        <a class="icon" href="#" title="Facebook profile" aria-label="Facebook profile">
+                            <svg>
+                                <use href="#icon-facebook" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="writing">
-            <h2>Writing</h2>
-            <p>Placeholder text for the Writing section.</p>
+        <!-- Band -->
+        <section id="band">
+            <h2>Top Gunz: The St. Louis 80s Party Rock Experience</h2>
+            <div class="band-grid">
+                <figure>
+                    <img src="assets/Placeholder image.png" alt="Top Gunz band photo placeholder" />
+                    <figcaption>TG BAND PIC</figcaption>
+                </figure>
+
+                <div class="band-copy card">
+                    <p>
+                        Jesse is also the lead guitarist in Top Gunz: The St. Louis 80s Party Rock Experience,
+                        performing under the name Dr. NoiZe. Top Gunz brings and look, sound, and attitude of an 80s
+                        arena concert wherever they go, playing the mega-hits of Van Halen, Bon Jovi, Motley Crue, Def
+                        Leppard, Poison, and many more. MORE
+                    </p>
+
+                    <ul class="link-list">
+                        <li>
+                            <a href="https://www.topgunzband.com/" target="_blank" rel="noopener">
+                                <svg class="mini">
+                                    <use href="#icon-link" />
+                                </svg>
+                                topgunzband.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/TOPGUNZSTL" target="_blank" rel="noopener">
+                                <svg class="mini">
+                                    <use href="#icon-facebook" />
+                                </svg>
+                                facebook.com/TOPGUNZSTL
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <figure>
+                    <img src="assets/Placeholder image.png" alt="Dr. NoiZe performance photo placeholder" />
+                    <figcaption>DR NOIZE PIC</figcaption>
+                </figure>
+            </div>
         </section>
 
+        <!-- PopMatters -->
+        <section id="popmatters">
+            <h2>PopMatters</h2>
+            <p>Jesse is also a contributor to PopMatters, where he writes book reviews and essays about music, movies,
+                and popular culture.</p>
+            <ul class="list">
+                <li>[Link to favorite piece 1]</li>
+                <li>[Link to favorite piece 2]</li>
+                <li>[Link to favorite piece 3]</li>
+            </ul>
+            <p>
+                For the full archive, see
+                <a href="https://www.popmatters.com/author/jessekavlado" target="_blank" rel="noopener">
+                    popmatters.com/author/jessekavlado
+                </a>
+            </p>
+        </section>
+
+        <!-- Podcasts -->
+        <section id="podcasts">
+            <h2>Podcast Appearances</h2>
+            <ul class="list">
+                <li><a href="https://www.historyofliterature.com/525-don-delillo-with-jesse-kavadlo/" target="_blank"
+                        rel="noopener">History of Literature — Don DeLillo with Jesse Kavadlo</a></li>
+                <li><a href="https://podcasts.apple.com/ca/podcast/jesse-kavadlo-phd/id1678818135?i=1000624770863"
+                        target="_blank" rel="noopener">Podcast: Jesse Kavadlo, PhD</a></li>
+                <li><a href="https://podcasts.apple.com/us/podcast/novelist-spotlight/id1593755062" target="_blank"
+                        rel="noopener">Novelist Spotlight</a></li>
+                <li><a href="https://newbooksnetwork.com/deep-cuts-classic-rock-and-hair-metal-with-professor-and-guitarist-jesse-kavadlo"
+                        target="_blank" rel="noopener">New Books Network — Deep Cuts: Classic Rock and Hair Metal</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Books -->
+        <section id="books">
+            <h2>Books</h2>
+
+            <article class="book">
+                <div class="book-media">
+                    <img src="assets/Placeholder image.png" alt="Rock of Pages cover placeholder" />
+                </div>
+                <div class="book-body">
+                    <h3>Rock of Pages: The Literary Tradition of 1980s Heavy Metal</h3>
+                    <p>Rock of Pages provides contexts and close readings of 1980s heavy metal with forty years of
+                        hindsight, drawing upon analytical frameworks usually associated with literature and literary
+                        studies.</p>
+                    <p>Based on decades of work as a professor of literature and as a musician, Jesse Kavadlo analyzes
+                        the ways in which 1980s heavy metal aligns with and develops many of the themes prevalent in the
+                        canon of literature. In doing so, the book examines some of the contexts of 1980s heavy metal,
+                        including Cold War, the rise of MTV, and the formation of the Parents Music Resource Center
+                        (PMRC) and subsequent congressional hearings.</p>
+                    <p>Rock of Pages takes the PMRC's own objections to heavy metal and uses them as titles and topics
+                        to analyze the intersections between heavy metal and literature: representations of violence,
+                        but the connected concerns about justice; images of substance abuse, and the interrelated issues
+                        of obsession, madness, suicidal ideation; sex and love, with, concomitantly, representations of
+                        women and relationships between men and women; and the references to the occult, with the
+                        depictions of Satan, the afterlife, and morality on earth itself. In doing so, the book suggests
+                        that 1980s heavy metal displayed more artistry and intelligence than people imagine, but that
+                        literature is rebellious and subversive as well.</p>
+                    <p class="links">
+                        <a href="https://www.bloomsbury.com/us/rock-of-pages-9798765140802/" target="_blank"
+                            rel="noopener">Bloomsbury</a>
+                        <span class="dot">•</span>
+                        <a href="https://www.amazon.com/Rock-Pages-Literary-Tradition-1980s/dp/B0DY84YJRW"
+                            target="_blank" rel="noopener">Amazon</a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="book">
+                <div class="book-media">
+                    <img src="assets/Placeholder image.png" alt="Don DeLillo in Context cover placeholder" />
+                </div>
+                <div class="book-body">
+                    <h3>Don DeLillo In Context</h3>
+                    <p>Don DeLillo is one of the most important novelists of the late twentieth and early twenty-first
+                        century. Yet despite DeLillo's prolific output and scholarly recognition, much of the attention
+                        has gone to his works individually, rather than collectively or thematically. This volume
+                        provides separate entries into the wide variety and categories of contexts that surround and
+                        help illuminate DeLillo's writings. Don DeLillo in Context examines how geography, biography,
+                        history, media studies, culture, philosophy, and the writing process provide critical frameworks
+                        and ways of reading and understanding DeLillo's prodigious body of work.</p>
+                    <p class="links">
+                        <a href="https://www.cambridge.org/core/books/don-delillo-in-context/02A7ED90ACB57B72922DF3D9A83F361A"
+                            target="_blank" rel="noopener">Cambridge</a>
+                        <span class="dot">•</span>
+                        <a href="https://www.amazon.com/Don-DeLillo-Context-Literature/dp/1316515435" target="_blank"
+                            rel="noopener">Amazon</a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="book">
+                <div class="book-media">
+                    <img src="assets/Placeholder image.png" alt="Michael Chabon's America cover placeholder" />
+                </div>
+                <div class="book-body">
+                    <h3>Michael Chabon’s America: Magical Words, Secret Worlds, and Sacred Spaces</h3>
+                    <p>Author Michael Chabon is acutely attuned to life in contemporary America, providing insight into
+                        the history of the late twentieth and early twenty-first centuries in novels such as The
+                        Mysteries of Pittsburgh (1988), Wonder Boys (1995), and Telegraph Avenue (2012). The Pulitzer
+                        Prize winning author of The Amazing Adventures of Kavalier and Clay, Chabon follows in the
+                        footsteps of past stylists, writing across multiple genres that include young-adult literature,
+                        essays, and screenplays. Despite his broad success, however, Chabon’s work has not been
+                        adequately examined from a critical perspective.</p>
+                    <p>Michael Chabon’s America: Magical Words, Secret Worlds, and Sacred Spaces is the first scholarly
+                        collection of essays analyzing the work of the acclaimed author. This book demonstrates how
+                        Chabon uses a broad range of styles and genres, including detective and comic book fiction, to
+                        define the American experience. These essays assess and analyze Chabon’s complete oeuvre,
+                        demonstrating his deep connection to the contemporary world and his place as a literary force.
+                    </p>
+                    <p>Providing a context for understanding the author’s work from cultural, historical, and stylistic
+                        perspectives, Michael Chabon’s America is a valuable study of a celebrated author whose work
+                        deserves close examination.</p>
+                    <p class="links">
+                        <a href="https://www.bloomsbury.com/us/michael-chabons-america-9781442236059/" target="_blank"
+                            rel="noopener">Bloomsbury</a>
+                        <span class="dot">•</span>
+                        <a href="https://www.amazon.com/Michael-Chabons-America-Contemporary-Literature/dp/1442236043"
+                            target="_blank" rel="noopener">Amazon</a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="book">
+                <div class="book-media">
+                    <img src="assets/Placeholder image.png"
+                        alt="Don DeLillo: Balance at the Edge of Belief cover placeholder" />
+                </div>
+                <div class="book-body">
+                    <h3>Don DeLillo: Balance at the Edge of Belief</h3>
+                    <p>Don DeLillo winner of the National Book Award, the William Dean Howells Medal, and the Jerusalem
+                        Prize is one of the most important novelists of the late twentieth and early twenty first
+                        centuries. While his work can be understood and taught as prescient and postmodern examples of
+                        millennial culture, this book argues that DeLillo’s recent novels White Noise, Libra, Mao II,
+                        Underworld, and The Body Artist are more concerned with spiritual crisis. Although DeLillo’s
+                        worlds are rife with rejection of belief and littered with faithfulness, estrangement, and
+                        desperation, his novels provide a balancing moral corrective against the conditions they
+                        describe. Speaking the vernacular of contemporary America, DeLillo explores the mysteries of
+                        what it means to be human.</p>
+                    <p class="links">
+                        <a href="https://www.peterlang.com/document/1096621" target="_blank" rel="noopener">Peter
+                            Lang</a>
+                        <span class="dot">•</span>
+                        <a href="https://www.amazon.com/Don-DeLillo-Balance-American-Literature/dp/0820463515?ref_=ast_author_dp"
+                            target="_blank" rel="noopener">Amazon</a>
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Contact -->
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+            <div class="contact-icons large">
+                <a class="icon" href="mailto:jkavadlo@maryville.edu" title="Email: jkavadlo@maryville.edu"
+                    aria-label="Email jkavadlo@maryville.edu">
+                    <svg>
+                        <use href="#icon-mail" />
+                    </svg>
+                </a>
+                <a class="icon" href="mailto:hourmanjk@gmail.com" title="Email: hourmanjk@gmail.com"
+                    aria-label="Email hourmanjk@gmail.com">
+                    <svg>
+                        <use href="#icon-mail" />
+                    </svg>
+                </a>
+                <a class="icon" href="#" title="X profile" aria-label="X profile">
+                    <svg>
+                        <use href="#icon-x" />
+                    </svg>
+                </a>
+                <a class="icon" href="#" title="LinkedIn profile" aria-label="LinkedIn profile">
+                    <svg>
+                        <use href="#icon-linkedin" />
+                    </svg>
+                </a>
+                <a class="icon" href="#" title="Facebook profile" aria-label="Facebook profile">
+                    <svg>
+                        <use href="#icon-facebook" />
+                    </svg>
+                </a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© <span id="year"></span> Jesse Kavadlo</p>
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>© <span id="y"></span> Jesse Kavadlo</p>
+        </div>
     </footer>
 
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById('y').textContent = new Date().getFullYear();
     </script>
 </body>
 
