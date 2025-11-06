@@ -4,137 +4,213 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jesse Kavadlo</title>
+    <title>Jesse Kavadlo, Ph.D.</title>
     <meta name="description" content="Professor, writer, performer." />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="wrap">
-            <h1 class="site-title">Jesse Kavadlo, Ph.D.</h1>
-            <nav class="site-social" aria-label="Social links">
-                <a href="mailto:jesse.kavadlo@maryville.edu" title="Email (Maryville)">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="mailto:jessekavadlo@gmail.com" title="Email (Personal)">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/jesse-kavadlo" target="_blank" rel="noopener" title="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://www.facebook.com/jesse.kavadlo" target="_blank" rel="noopener" title="Facebook">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://x.com/jessekavadlo" target="_blank" rel="noopener" title="X (Twitter)">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
+    <header class="hero" role="banner" aria-label="Site header">
+        <div class="hero-bg" style="--hero-img: url('assets/banner.jpg');"></div>
+
+        <div class="hero-inner wrap">
+            <img class="avatar" src="assets/pictures/Headshot 1.jpg" alt="Portrait of Jesse Kavadlo" width="160"
+                height="160" />
+            <h1 class="title">Jesse Kavadlo, Ph.D.</h1>
+            <p class="subtitle">Professor of English & Humanities · Writer · Performer</p>
+
+            <nav class="social" aria-label="Contact and social">
+                <a href="mailto:jkavadlo@maryville.edu" title="Email work"><i class="fa-solid fa-envelope"></i></a>
+                <a href="mailto:hourmanjk@gmail.com" title="Email personal"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/jesse-kavadlo" target="_blank" rel="noopener" title="LinkedIn"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/jessekavadlo" target="_blank" rel="noopener" title="X"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/jesse.kavadlo" target="_blank" rel="noopener" title="Facebook"><i
+                        class="fa-brands fa-facebook"></i></a>
             </nav>
 
-        </div>
-
-        <!-- red quick-links strip (optional, matches Maryville chips) -->
-        <div class="quick-strip">
+            <nav class="tabs" aria-label="Section navigation">
+                <a href="#about" class="tab is-active">About</a>
+                <a href="#articles" class="tab">Articles</a>
+                <a href="#podcasts" class="tab">Podcasts</a>
+                <a href="#books" class="tab">Books</a>
+            </nav>
         </div>
     </header>
 
     <main class="wrap">
-        <section id="about">
+        <!-- About -->
+        <section id="about" class="section">
             <h2>About</h2>
-
-            <div class="about-content">
-                <img src="assets\headshot 2.jpg" alt="Jesse Kavadlo portrait" class="about-photo" />
-
-                <p>
-                    Professor, writer, and performer Jesse Kavadlo received his Ph.D. from Fordham University. He is a
+            <div class="copy max">
+                <p>Professor, writer, and performer Jesse Kavadlo received his Ph.D. from Fordham University. He is a
                     Professor of English and Humanities at Maryville University of St. Louis, where he is also the
                     Director of the Center for Teaching and Learning and Coordinator of CORE 101: Discovering Community.
-                    <br>
-                    <br>
-                    He teaches
-                    classes in American literature as well as courses like Aliens to Zombies: Monsters in Literature and
-                    Film, Reading Rock & Roll, and Superheroes in American Culture.
-                    <br>
-                    <br>
-                    Jesse’s articles and chapters have appeared in the journals LIST and the books LIST. He has
-                    presented
-                    at many national conferences, including LIST.
                 </p>
+                <p>He teaches classes in American literature as well as courses like Aliens to Zombies: Monsters in
+                    Literature and Film, Reading Rock & Roll, and Superheroes in American Culture.</p>
+                <p class="muted">Jesse’s articles and chapters have appeared in journals and edited volumes. He has
+                    presented at many national conferences.</p>
             </div>
-        </section>
 
-        <section id="band">
-            <h2>Band</h2>
+            <!-- Band block now sits AFTER the paragraph, stacked -->
+            <div class="band-block">
+                <div class="media-grid">
+                    <figure class="feature">
+                        <img src="assets/pictures/top-gunz-photo.jpg" alt="Top Gunz performing live" />
+                        <figcaption>Top Gunz: St. Louis 80s Party Rock Experience</figcaption>
+                    </figure>
+                    <figure class="feature">
+                        <img src="assets/pictures/dr-noize-photo.jpg" alt="Dr. NoiZe on guitar" />
+                        <figcaption>Performing as Dr. NoiZe</figcaption>
+                    </figure>
+                </div>
 
-            <!-- Top Gunz group photo (banner style) -->
-            <img src="assets\top gunz banner.png" alt="Top Gunz performing live" class="band-banner" />
-
-            <!-- Dr. NoiZe section (matches About layout) -->
-            <div class="band-content">
-                <img src="assets\dr noize.jpg" alt="Jesse Kavadlo performing as Dr. NoiZe" class="band-photo" />
-
-                <div class="band-text">
-                    <p>
-                        Jesse is also the lead guitarist in <strong>Top Gunz: The St. Louis ‘80s Party Rock
-                            Experience</strong>,
-                        performing under the name <strong>Dr. NoiZe</strong>. Top Gunz brings the look, sound, and
-                        attitude of
-                        an ‘80s arena concert wherever they go, playing the mega-hits of Van Halen, Bon Jovi, Mötley
-                        Crüe,
-                        Def Leppard, Poison, and more.
-                    </p>
-
-                    <p>
-                        You can learn more about the band and upcoming shows below:
-                    </p>
-
-                    <p class="band-links">
-                        <a href="https://www.topgunzband.com/" target="_blank" rel="noopener">topgunzband.com</a> |
-                        <a href="https://www.facebook.com/TOPGUNZSTL" target="_blank" rel="noopener">Facebook</a>
+                <div class="panel">
+                    <p>Jesse is the lead guitarist in Top Gunz, performing as Dr. NoiZe. Top Gunz brings the look,
+                        sound, and attitude of an 80s arena concert, playing the mega hits of Van Halen, Bon Jovi,
+                        Motley Crue, Def Leppard, Poison, and more.</p>
+                    <p class="link-row">
+                        <a class="btn btn-ghost" href="https://www.topgunzband.com/" target="_blank" rel="noopener">Top
+                            Gunz site</a>
+                        <a class="btn btn-ghost" href="https://www.facebook.com/TOPGUNZSTL" target="_blank"
+                            rel="noopener">Top Gunz on Facebook</a>
                     </p>
                 </div>
             </div>
         </section>
 
-        <section id="writing">
-            <h2>Writing</h2>
+        <!-- Articles -->
+        <section id="articles" class="section">
+            <h2>Articles</h2>
+            <p>Jesse is a contributor to PopMatters, where he writes book reviews and essays about music, movies, and
+                popular culture.</p>
+
             <ul class="list">
-                <li>PopMatters favorite 1 (placeholder)</li>
-                <li>PopMatters favorite 2 (placeholder)</li>
-                <li>PopMatters favorite 3 (placeholder)</li>
+                <li><a href="#" target="_blank" rel="noopener">Favorite piece 1</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Favorite piece 2</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Favorite piece 3</a></li>
+            </ul>
+
+            <p class="muted">Full archive: <a href="https://www.popmatters.com/author/jessekavlado" target="_blank"
+                    rel="noopener">PopMatters author page</a></p>
+        </section>
+
+        <!-- Podcasts -->
+        <section id="podcasts" class="section">
+            <h2>Podcasts</h2>
+            <ul class="list">
+                <li><a href="https://www.historyofliterature.com/525-don-delillo-with-jesse-kavadlo/" target="_blank"
+                        rel="noopener">The History of Literature: Don DeLillo with Jesse Kavadlo</a></li>
+                <li><a href="https://podcasts.apple.com/ca/podcast/jesse-kavadlo-phd/id1678818135?i=1000624770863"
+                        target="_blank" rel="noopener">Interview on Apple Podcasts</a></li>
+                <li><a href="https://podcasts.apple.com/us/podcast/novelist-spotlight/id1593755062" target="_blank"
+                        rel="noopener">Novelist Spotlight</a></li>
+                <li><a href="https://newbooksnetwork.com/deep-cuts-classic-rock-and-hair-metal-with-professor-and-guitarist-jesse-kavadlo"
+                        target="_blank" rel="noopener">New Books Network: Deep Cuts</a></li>
             </ul>
         </section>
 
-        <section id="books">
+        <!-- Books: long-form sections -->
+        <section id="books" class="section">
             <h2>Books</h2>
-            <div class="books-grid">
-                <article class="book-card">
-                    <img src="assets\book covers\rock of pages.jpg" alt="Cover of Rock of Pages by Jesse Kavadlo"
-                        class="book-cover" />
-                    <h3>Rock of Pages</h3>
-                    <p>Short description placeholder.</p>
-                </article>
-                <article class="book-card">
-                    <img src="assets/book covers/Don Delilo in context.jpg"
-                        alt="Cover of Don DeLillo in Context by Jesse Kavadlo" class="book-cover" />
+
+            <article class="book">
+                <header class="book-header">
+                    <img class="book-cover" src="assets/books/rock-of-pages.jpg" alt="Rock of Pages cover" />
+                    <h3>Rock of Pages: The Literary Tradition of 1980s Heavy Metal</h3>
+                </header>
+                <div class="book-body">
+                    <p>Rock of Pages provides contexts and close readings of 1980s heavy metal with forty years of
+                        hindsight, drawing upon analytical frameworks usually associated with literature and literary
+                        studies.</p>
+                    <p>Based on decades of work as a professor of literature and as a musician, Jesse Kavadlo analyzes
+                        the ways in which 1980s heavy metal aligns with and develops many of the themes prevalent in the
+                        canon of literature. In doing so, the book examines some of the contexts of 1980s heavy metal,
+                        including the Cold War, the rise of MTV, and the Parents Music Resource Center (PMRC)
+                        congressional hearings.</p>
+                    <p>Rock of Pages takes the PMRC's own objections to heavy metal and uses them as titles and topics
+                        to analyze intersections between heavy metal and literature: representations of violence and
+                        justice; images of substance abuse with related issues of obsession, madness, and suicidal
+                        ideation; sex and love, including representations of women and relationships; and references to
+                        the occult, depictions of Satan, the afterlife, and morality. The book suggests that 1980s heavy
+                        metal displayed more artistry and intelligence than many imagine, while literature itself is
+                        rebellious and subversive.</p>
+                    <p class="link-row">
+                        <a class="btn" href="https://www.bloomsbury.com/us/rock-of-pages-9798765140802/" target="_blank"
+                            rel="noopener">Bloomsbury</a>
+                        <a class="btn btn-ghost"
+                            href="https://www.amazon.com/Rock-Pages-Literary-Tradition-1980s/dp/B0DY84YJRW"
+                            target="_blank" rel="noopener">Amazon</a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="book">
+                <header class="book-header">
+                    <img class="book-cover" src="assets/books/delillo-in-context.jpg"
+                        alt="Don DeLillo in Context cover" />
                     <h3>Don DeLillo in Context</h3>
-                    <p>Short description placeholder.</p>
-                </article>
-                <article class="book-card">
-                    <img src="assets\book covers/michael chabons america.jpg"
-                        alt="Cover of Michael Chabon’s America by Jesse Kavadlo" class="book-cover" />
-                    <h3>Michael Chabon’s America</h3>
-                    <p>Short description placeholder.</p>
-                </article>
-                <article class="book-card">
-                    <img src="assets\book covers/" alt="Cover of Rock of Pages by Jesse Kavadlo" class="book-cover" />
-                    <h3>Don DeLillo: Balance…</h3>
-                    <p>Short description placeholder.</p>
-                </article>
-            </div>
+                </header>
+                <div class="book-body">
+                    <p>Don DeLillo is one of the most important novelists of the late twentieth and early twenty first
+                        century. Much attention has gone to his works individually; this volume provides entries into
+                        the many contexts that illuminate his writing.</p>
+                    <p>Don DeLillo in Context examines how geography, biography, history, media studies, culture,
+                        philosophy, and the writing process provide critical frameworks for understanding DeLillo’s body
+                        of work.</p>
+                    <p class="link-row">
+                        <a class="btn"
+                            href="https://www.cambridge.org/core/books/don-delillo-in-context/02A7ED90ACB57B72922DF3D9A83F361A"
+                            target="_blank" rel="noopener">Cambridge</a>
+                        <a class="btn btn-ghost"
+                            href="https://www.amazon.com/Don-DeLillo-Context-Literature/dp/1316515435" target="_blank"
+                            rel="noopener">Amazon</a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="book">
+                <header class="book-header">
+                    <img class="book-cover" src="assets/books/michael-chabons-america.jpg"
+                        alt="Michael Chabon’s America cover" />
+                    <h3>Michael Chabon’s America: Magical Words, Secret Worlds, and Sacred Spaces</h3>
+                </header>
+                <div class="book-body">
+                    <p>The first scholarly collection of essays analyzing Michael Chabon’s work across genres, assessing
+                        his writing in cultural, historical, and stylistic contexts.</p>
+                    <p class="link-row">
+                        <a class="btn" href="https://www.bloomsbury.com/us/michael-chabons-america-9781442236059/"
+                            target="_blank" rel="noopener">Bloomsbury</a>
+                        <a class="btn btn-ghost"
+                            href="https://www.amazon.com/Michael-Chabons-America-Contemporary-Literature/dp/1442236043"
+                            target="_blank" rel="noopener">Amazon</a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="book">
+                <header class="book-header">
+                    <img class="book-cover" src="assets/books/delillo-balance.jpg"
+                        alt="Don DeLillo: Balance at the Edge of Belief cover" />
+                    <h3>Don DeLillo: Balance at the Edge of Belief</h3>
+                </header>
+                <div class="book-body">
+                    <p>Argues that DeLillo’s major novels explore spiritual crisis and offer a balancing moral
+                        corrective while speaking the vernacular of contemporary America.</p>
+                    <p class="link-row">
+                        <a class="btn btn-ghost" href="https://www.peterlang.com/document/1096621" target="_blank"
+                            rel="noopener">Publisher</a>
+                        <a class="btn btn-ghost"
+                            href="https://www.amazon.com/Don-DeLillo-Balance-American-Literature/dp/0820463515?ref_=ast_author_dp"
+                            target="_blank" rel="noopener">Amazon</a>
+                    </p>
+                </div>
+            </article>
         </section>
     </main>
 
@@ -146,6 +222,19 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        const tabs = [...document.querySelectorAll('.tabs .tab')];
+        const ids = tabs.map(a => a.getAttribute('href'));
+        const els = ids.map(id => document.querySelector(id));
+        function onScroll() {
+            const y = window.scrollY + 120;
+            let active = 0;
+            els.forEach((el, i) => { if (el && el.offsetTop <= y) active = i; });
+            tabs.forEach(t => t.classList.remove('is-active'));
+            tabs[active].classList.add('is-active');
+        }
+        document.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
     </script>
 </body>
 
