@@ -233,7 +233,13 @@ a:hover {
 
 .feature img {
     border-radius: var(--radius);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, .12)
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .12);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.feature img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .14);
 }
 
 .feature figcaption {
@@ -305,16 +311,20 @@ a:hover {
     background: var(--brand);
     color: #fff;
     font-weight: 700;
-    text-decoration: none
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease;
 }
 
 .btn:hover {
-    filter: brightness(.95)
+    filter: brightness(.95);
+    transform: translateY(-2px);
 }
 
 .btn-ghost {
     background: transparent;
-    color: var(--brand)
+    color: var(--brand);
+    transition: transform .15s ease, box-shadow .15s ease;
+    transform: translateY(-2px);
 }
 
 /* Lists */
