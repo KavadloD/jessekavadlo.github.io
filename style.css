@@ -133,6 +133,13 @@ a:hover {
     margin-top: .25rem
 }
 
+.availability {
+    margin-top: 0.3rem;
+    font-size: 0.95rem;
+    color: var(--muted);
+    letter-spacing: 0.1px;
+}
+
 /* Social */
 .social {
     display: flex;
@@ -456,11 +463,6 @@ a:hover {
     box-shadow: 0 12px 32px rgba(0, 0, 0, .12);
 }
 
-@media (max-width: 900px) {
-    .podcast-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* Footer */
 .site-footer {
@@ -482,49 +484,57 @@ a:hover {
 }
 
 /* Responsive */
-@media (max-width:900px) {
+@media (max-width: 900px) {
     .hero-bg {
-        height: 280px
+        height: 240px;
     }
 
-    .media-grid {
-        grid-template-columns: 1fr
-    }
-
-    .book-header {
-        grid-template-columns: 1fr
-    }
-
-    .book-cover {
-        width: 160px;
-        justify-self: start
-    }
-}
-
-@media (max-width:600px) {
     .hero-inner {
-        margin-top: -82px
+        padding: 2.5rem 1rem;
+        margin-top: -80px;
     }
 
-    .title {
-        font-size: 1.65rem
-    }
-}
-
-/* mobile: stack text above image */
-@media (max-width:900px) {
     .about-layout {
         grid-template-columns: 1fr;
     }
-}
 
-@media (max-width: 900px) {
-    .book-header {
+    .media-grid {
         grid-template-columns: 1fr;
     }
 
+    /* Books stack nicely on smaller screens */
+    .book {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .book-cover {
-        width: 190px;
-        justify-self: start;
+        flex: 0 0 auto;
+        max-width: 190px;
+    }
+
+    /* Podcast grid is already a column with flex,
+       this just tightens spacing a bit on tablets */
+    .podcast-card {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-inner {
+        margin-top: -82px;
+    }
+
+    .title {
+        font-size: 1.65rem;
+    }
+
+    .wrap {
+        padding: 1.5rem 1rem;
+    }
+
+    .social a {
+        width: 36px;
+        height: 36px;
     }
 }
