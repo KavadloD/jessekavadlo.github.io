@@ -255,13 +255,17 @@ a:hover {
     padding: 1rem
 }
 
-/* Books: long-form */
+/* Books: two column layout using flexbox */
 .book {
     background: var(--paper);
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    padding: 1.25rem;
+    padding: 1.5rem 1.75rem;
     margin: 1.25rem 0;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .06);
+    display: flex;
+    gap: 1.75rem;
+    align-items: center;
     transition: transform .18s ease, box-shadow .18s ease;
 }
 
@@ -271,24 +275,32 @@ a:hover {
 }
 
 .book-header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: .5rem
+    margin: 0 0 .5rem;
 }
 
 .book-cover {
-    width: 120px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, .08)
+    flex: 0 0 220px;
+    max-width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .08);
+}
+
+.book-header h3 {
+    margin: 0 0 .6rem;
+    font-size: 1.2rem;
+}
+
+.book-body {
+    flex: 1 1 auto;
 }
 
 .book-body p:last-child {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
+
+
+/* Band section */
 .band-description {
     margin-top: 1rem;
     padding-top: 1.5rem;
@@ -323,8 +335,13 @@ a:hover {
 .btn-ghost {
     background: transparent;
     color: var(--brand);
-    transition: transform .15s ease, box-shadow .15s ease;
+    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+    transform: translateY(0);
+}
+
+.btn-ghost:hover {
     transform: translateY(-2px);
+    filter: brightness(.95);
 }
 
 /* Lists */
@@ -335,6 +352,69 @@ a:hover {
 .list li {
     margin: .4rem 0
 }
+
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.article-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, .06);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.article-card a {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.article-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .12);
+    border-color: var(--brand);
+}
+
+.article-source {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+    background: rgba(255, 210, 210, 0.075);
+    padding: 0.15rem 0.5rem;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.article-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.article-meta {
+    margin-top: 0.35rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.article-meta i {
+    font-size: 0.8rem;
+}
+
+
 
 .podcast-grid {
     display: flex;
@@ -435,5 +515,16 @@ a:hover {
 @media (max-width:900px) {
     .about-layout {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .book-header {
+        grid-template-columns: 1fr;
+    }
+
+    .book-cover {
+        width: 190px;
+        justify-self: start;
     }
 }
